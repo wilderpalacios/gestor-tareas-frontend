@@ -1,59 +1,60 @@
-# GestorTareas
+# 📌 Gestor de Tareas - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Este es el **frontend** del sistema de gestión de tareas, desarrollado con **Angular**. Permite realizar operaciones CRUD, filtrar y actualizar el estado de tareas.
 
-## Development server
+## 🚀 Tecnologías Utilizadas
 
-To start a local development server, run:
+- **Angular** (19.2.3)
+- **[Angular CLI](https://github.com/angular/angular-cli) v19.2.4**
+- **TypeScript**
+- **RxJS**
+- **Tailwind CSS** (opcional)
+- **Jasmine & Karma** (para pruebas)
 
-```bash
+## 📦 Requisitos Previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+- **Node.js** (v22.14.0) y **npm**
+- **Angular CLI** (`npm install -g @angular/cli`)
+
+## 🛠️ Instalación y Ejecución
+
+### 1️⃣ Clonar el repositorio
+
+```sh
+git clone https://github.com/tuusuario/gestor-tareas.git
+cd gestor-tareas-frontend
+```
+
+
+### 2️⃣ Instalar dependencias
+
+```sh
+npm install
+```
+
+
+### 3️⃣ Ejecutar el frontend
+
+```sh
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+#### 📌 Nota: La aplicación se ejecutará en http://localhost:4200/.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+### Ejecutar pruebas
+```sh
 ng test
 ```
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+## 📌 Consideraciones Finales
 
-```bash
-ng e2e
-```
+- El frontend se comunica con la API en [`http://localhost:5047`](http://localhost:5047).
+- La autenticación no está implementada en esta versión.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📄 Licencia
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Proyecto de código abierto bajo la licencia MIT.

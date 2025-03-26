@@ -1,0 +1,33 @@
+<form [formGroup]="taskForm" (ngSubmit)="submitForm()" class="bg-white p-4 rounded-lg shadow-md">
+    <div class="mb-3">
+        <label for="title" class="block font-medium">Título:</label>
+        <input id="title" formControlName="title" type="text" class="w-full border p-2 rounded-lg"
+            placeholder="Escribe el título de la tarea" />
+        <small *ngIf="taskForm.get('title')?.invalid && taskForm.get('title')?.touched" class="text-red-500">
+            El título es obligatorio y debe tener al menos 3 caracteres.
+        </small>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="block font-medium">Descripción:</label>
+        <textarea id="description" formControlName="description" class="w-full border p-2 rounded-lg"
+            placeholder="Describe la tarea..."></textarea>
+        <small *ngIf="taskForm.get('description')?.invalid && taskForm.get('description')?.touched"
+            class="text-red-500">
+            La descripción es obligatoria.
+        </small>
+    </div>
+
+    <div class="mb-3">
+        <label class="block font-medium">Estado:</label>
+        <select formControlName="status" class="w-full border p-2 rounded-lg">
+            <option value="pendiente">Pendiente</option>
+            <option value="completado">Completado</option>
+        </select>
+    </div>
+
+    <button type="submit" [disabled]="taskForm.invalid"
+        class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Agregar Tarea
+    </button>
+</form>
