@@ -23,7 +23,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 ### 1️⃣ Clonar el repositorio
 
 ```sh
-git clone https://github.com/tuusuario/gestor-tareas.git
+git clone https://github.com/wilderpalacios/gestor-tareas-frontend.git
 cd gestor-tareas-frontend
 ```
 
